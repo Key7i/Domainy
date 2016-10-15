@@ -1,2 +1,2 @@
 # Domainy
-A bootstrap html template
+A bootstrap html template with sass flavor
