@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 // external js: isotope.pkgd.js
-
+$(window).load(function(){
 // init Isotope
 var $grid = $('.isotope-grid').isotope({
   itemSelector: '.grid-item',
@@ -38,6 +38,7 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
+    });
 
     function Toggle() {
         $(this).find('.project-text').fadeToggle("fast");
@@ -69,11 +70,12 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 
 
-    $(".navbar-inverse").affix({
-        offset: { 
-            top: $("#features").outerHeight(true)
-        }
-    });
+    // Target ID for Navbar Affix
+//    $(".navbar-inverse").affix({
+//        offset: { 
+//            top: $("#features").outerHeight(true)
+//        }
+//    });
 
     
     /*
